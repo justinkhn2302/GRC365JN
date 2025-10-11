@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Graphic Design Request</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("../Tutorial 7 Forms/Georgia.ttf");
+    } h1 {
+        text-align: center;
+        font-weight: normal;
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: lightgrey;
+        margin: 36px auto;
+        border: 1px solid dimgrey;
+        box-shadow: 2px 3px 6px blue;
+        border-radius: 18px;
+        font: 14pt/1.2em Georgia;
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 35px;
+        margin-bottom: 12px;
+    } #personal textarea {
+        width: 100%;
+	 } 
+</style>
+</head>
+
+<body>
+    <form action="https://formsubmit.co/bluejay0208@yahoo.com" method="POST">
+    <h1>Contact Us</h1>
+	<label for="fname"> First Name:</label><br/>
+	<input type="text" id="fname" value="First Name" /><br/>
+	<label for="lname"> Last Name:</label><br/>
+	<input type="text" id="lname" value="Last Name" /><br/>
+		
+		<fieldset> 
+		<legend> Reason for Contacting Us</legend>
+		<input type="radio" name="services" id="design" value="Design" />
+		<label for="design"> Design Services</label><br/>
+   <input type="radio" name="services" id="consulting" value="Consulting" />
+		<label for="consulting"> Consulting </label><br/>
+	<input type="radio" name="services" id="UXD" value="User Experience Design" />
+		<label for="UXD"> User Experience Design </label><br/>
+			</fieldset>
+		
+			<fieldset> 
+		<legend>Operating System</legend>
+		<input type="checkbox" name="os" id="macos" value="MacOs" />
+		<label for="macos">Macintosh</label><br/>
+		<input type="checkbox" name="windows" id="windows" value="Windows" />
+		<label for="windows">Windows</label><br/>
+		<input type="checkbox" name="unix" id="unix" value="UNIX" />
+		<label for="unix">UNIX</label><br/>	
+		</fieldset>
+		
+		<fieldset> 
+		<legend>Time Frame </legend>
+		<select multiple> 
+			<option value="" >When would you like to start with us?</option>
+			<option value="month" >This Month</option>
+			<option value="quarter" >This Quarter</option>
+			<option value="year" >This Year</option>
+			<option value="notsure" >Not Sure</option>
+		</select>
+			</fieldset>
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>
