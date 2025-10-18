@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Into Brand New Horizons!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap" rel="stylesheet">
+<style>
+    * {margin: 0; padding: 0;}
+    body {
+        background: black;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .hero {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .hero h1 {
+        position: absolute;
+        top: 43%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        font-size: 4.4rem;
+        font-weight: 900;
+        font-family: "Playwrite DE Grund Guides",cursive;
+        background:linear-gradient(
+          90deg,
+          rgba(0, 51, 102, 1), 
+          rgba(0, 102, 204, 1),  
+          rgba(0, 191, 255, 1)   
+        );
+        background-size: 300% 300%;  
+
+        background-clip: text;
+        color: transparent;
+
+        animation: shimmer 6s infinite linear;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    p {
+        font: 16pt/1.5em Candara;
+        color: white;
+        width: 70ch;
+        margin: 48px auto;
+    }
+</style>
+</head>
+
+<body>
+    <div class="hero">
+        <img src="SeaBack.jpg" alt="Beach background">
+        <h1>Into Brand New Horizons!</h1>
+		<p id="caption">Photo by lecreusois on pixabay.</p>
+    </div>
+    
+    <p>Before you unfolds a serene expanse of ocean bathed in the golden hues of a fading sun, where every ripple glitters with sparks of light as though the sea itself were strewn with molten stars. A slender sailboat glides gracefully across the shimmering surface, its canvas sails glowing amber as they catch the last warmth of day, etched in delicate lines against the wide horizon. The vessel cuts smoothly through the water, leaving only the faintest trace of a wake, a whisper of its passage upon the restless sea. The air hums with tranquility, touched by the soft murmur of waves brushing against the hull and the distant sigh of wind threading through taut ropes. Out beyond, the sky burns in a quiet blaze—tones of peach, copper, and pale rose fading seamlessly into the darker blues above—an eternal meeting of fire and water. Shadows gather gently at the edges, giving depth to the brilliance, while the sailors, small against the immensity of sea and sky, move with calm assurance as if guided by something older than themselves. Every element—the play of light upon the waves, the proud tilt of the sail, the infinite horizon—joins in a moment of harmony that feels timeless, delicate, and immense all at once. Here, the ocean and the heavens share their secrets in silence, and the world seems to slow, offering a fleeting vision of pure and unbroken beauty.</p>
+</body>
+</html>
