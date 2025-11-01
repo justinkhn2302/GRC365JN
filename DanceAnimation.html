@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Skelly Wobble Walk</title>
+<style>
+  body { margin: 0; background: #eee; font-family: system-ui, sans-serif; }
+
+  #bg {
+    width: 864px;
+    height: 324px;
+    margin: 24px auto;
+    background: url("spookyBG.png") center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+  } #buttons {
+    width: 260px;
+    height: 65px;
+    margin: 16px auto 8px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  } main p {
+    font: 14pt/1.4em Georgia, serif;
+    width: 65ch;
+    margin: 24px auto;
+  } button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: 1px solid #999;
+    cursor: pointer;
+  } .skelly-wrap {
+    position: absolute;
+    left: -1px;              
+    top: 120px;
+    animation: moveAcross 6s linear 1 forwards;
+    animation-play-state: paused; 
+  } .skelly {
+    width: 120px;              
+    height: auto;
+    display: block;
+    animation: wobble .5s ease-in-out infinite;
+    animation-play-state: paused; 
+    transform-origin: 50% 70%;
+  } @keyframes moveAcross {
+    from { transform: translateX(0); }
+    to   { transform: translateX(1000px); } 
+  } @keyframes wobble {
+    0%   { transform: rotate(0deg) translateY(0); }
+    25%  { transform: rotate(-6deg) translateY(2px); }
+    50%  { transform: rotate(0deg) translateY(-2px); }
+    75%  { transform: rotate(6deg) translateY(2px); }
+    100% { transform: rotate(0deg) translateY(0); }
+  }
+</style>
+</head>
+
+<body>
+ 
+  <div id="buttons">
+    <button style="background: lightgreen;" id="startBtn">Start</button>
+    <button style="background: yellow;" id="pauseBtn">Pause</button>
+    <button style="background: red;" id="rewindBtn">Rewind</button>
+  </div>
+
+  
+  <div id="bg">
+    <div class="skelly-wrap" id="skellyWrap">
+      <img class="skelly" id="skelly" src="skelly.png" alt="Skelly">
+    </div>
+  </div>
+
+  <script>
+    const wrap = document.getElementById('skellyWrap');
+    const skelly = document.getElementById('skelly');
+
+    
+    document.getElementById('startBtn').onclick = () => {
+      wrap.style.animationPlayState = 'running';
+      skelly.style.animationPlayState = 'running';
+    };
+    document.getElementById('pauseBtn').onclick = () => {
+      wrap.style.animationPlayState = 'paused';
+      skelly.style.animationPlayState = 'paused';
+    };
+    document.getElementById('rewindBtn').onclick = () => {
+      wrap.style.animation = 'none';
+      skelly.style.animation = 'none';
+
+      void wrap.offsetWidth;
+
+      wrap.style.animation = 'moveAcross 6s linear 1 forwards';
+      skelly.style.animation = 'wobble .5s ease-in-out infinite';
+
+      wrap.style.animationPlayState = 'paused';
+      skelly.style.animationPlayState = 'paused';
+
+      wrap.style.left = '-1px';
+      wrap.style.top = '120px';
+    };
+  </script>
+
+  <main>
+    <p>Dance The Spooky Night Away as Skelly!</p>
+  </main>
+
+</body>
+</html>
