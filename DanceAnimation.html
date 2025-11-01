@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Skelly Wobble Walk</title>
+<title>SKELLY Wobble Walk</title>
 <style>
   body { margin: 0; background: #eee; font-family: system-ui, sans-serif; }
 
@@ -33,13 +33,13 @@
     font-weight: 700;
     border: 1px solid #999;
     cursor: pointer;
-  } .skelly-wrap {
+  } .SKELLY-wrap {
     position: absolute;
     left: -1px;              
     top: 120px;
     animation: moveAcross 6s linear 1 forwards;
     animation-play-state: paused; 
-  } .skelly {
+  } .SKELLY {
     width: 120px;              
     height: auto;
     display: block;
@@ -69,35 +69,35 @@
 
   
   <div id="bg">
-    <div class="skelly-wrap" id="skellyWrap">
-      <img class="skelly" id="skelly" src="skelly.png" alt="Skelly">
+    <div class="SKELLY-wrap" id="SKELLYWrap">
+      <img class="SKELLY" id="SKELLY" src="SKELLY.png" alt="SKELLY">
     </div>
   </div>
 
   <script>
-    const wrap = document.getElementById('skellyWrap');
-    const skelly = document.getElementById('skelly');
+    const wrap = document.getElementById('SKELLYWrap');
+    const SKELLY = document.getElementById('SKELLY');
 
     
     document.getElementById('startBtn').onclick = () => {
       wrap.style.animationPlayState = 'running';
-      skelly.style.animationPlayState = 'running';
+      SKELLY.style.animationPlayState = 'running';
     };
     document.getElementById('pauseBtn').onclick = () => {
       wrap.style.animationPlayState = 'paused';
-      skelly.style.animationPlayState = 'paused';
+      SKELLY.style.animationPlayState = 'paused';
     };
     document.getElementById('rewindBtn').onclick = () => {
       wrap.style.animation = 'none';
-      skelly.style.animation = 'none';
+      SKELLY.style.animation = 'none';
 
       void wrap.offsetWidth;
 
       wrap.style.animation = 'moveAcross 6s linear 1 forwards';
-      skelly.style.animation = 'wobble .5s ease-in-out infinite';
+      SKELLY.style.animation = 'wobble .5s ease-in-out infinite';
 
       wrap.style.animationPlayState = 'paused';
-      skelly.style.animationPlayState = 'paused';
+      SKELLY.style.animationPlayState = 'paused';
 
       wrap.style.left = '-1px';
       wrap.style.top = '120px';
@@ -105,8 +105,9 @@
   </script>
 
   <main>
-    <p>Dance The Spooky Night Away as Skelly!</p>
+    <p>Dance The Spooky Night Away as SKELLY!</p>
   </main>
 
 </body>
+
 </html>
