@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novel :: Orchostraitorp2</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=New+Rocker&display=swap" rel="stylesheet">
+<style>
+    #page {
+        width: 928px;
+        height: 1224px;
+        margin: 24px auto;
+        background: gold;
+        border-radius: 24px;
+        border: 1px solid lightblue;
+        color: red;
+		position: relative;
+    } h1 {
+        font: 48pt/1.4em "New Rocker";
+        text-align: center; 
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } img {
+        width: 125px;
+    } img:hover {
+        filter: opacity(0.67);
+    } figure {
+        width: 125px;
+        margin: 0 auto;
+        cursor: pointer;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+        text-align: center;
+    }.nav-icon {
+        width: 60px; 
+	} #buttons {
+	width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px 0;
+    background: rgba(255,255,255,0.8); 
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    backdrop-filter: blur(4px); 
+    } button {
+        width: 125px;
+        height: 50px;
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 6px;
+    } @media print {
+        body {
+            width: 7in;
+            height: 9.0in;
+        } figure {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+</style>
+<script language="javascript" type="text/javascript">
+	function backPage(){
+    window.location.href = "page1(Orchostraitor).html"; 
+}
+	function increaseContrast(){
+		document.getElementById('page').style.color='black';
+		
+		document.getElementById('page').style.background='white';
+	} function resetContrast(){
+		document.getElementById('page').style.background='black';
+		
+		document.getElementById('page').style.color='red';
+		
+		document.getElementById('page').style.background='gold';
+	}function nextPage(){
+    window.location.href = "page3(Orchostraitor).html";
+}
+	
+
+</script>
+</head>
+
+<body>
+    <div id="page">
+    <h1>Orchostraitor - page 2</h1>
+  <p>High above the swarming chaos within the grand hollow, Nowle and the remains of his Galesong Covenant gathered on their stark skeletal perches. Once, the council had been a choir of wisdom and gleaming feathers, weaving songs composed across ancestries. Now, vacant stone perches loomed in tragic silence, waiting for masters reduced to dust. </p>
+<p>With his seeing eye, Nowle counted the familiar wingfolk that still stood alongside him, but the blind glimpsed nothing but phantoms of a fading brilliance. These were the voices that remained of the Galesong. This was the council upon which the fate of all Mergansil now rested. With another weary sigh, he shut his eyes, and listened to his estranged covenant argue amongst each other. </p> 
+		<p>“They march on the Clutchspires!” cawed a trembling Tybal Carrion. His eyes darted across the sky as if he alone saw doom's descent. “We must strike now, or our children will be killed in their nests!”</p> 
+<p>“Strike?” The distraught Sparrowhawk squawked. “You saw what became of my roost. The wingfolk were struck down the moment they flew from their solar ships.”</p> 
+<p>“Certainly you didn’t think flying blindly at them would work, did you Thereu?” Lybann the merchant chirped. “If you were wiser, you’d have focused on bringing down their border towers— breaking their lines of supply. Then we could starve them!”</p> 
+<p>“Yes!” another member of Lybann’s own company agreed. “We can seal our sanctums and watch as the humans tear each other apart!”</p> 
+<p>Amidst the roar of arguments, Nowle heard the faint whisper of a quill on parchment beside him as if the chaos could be ordered by ink. His oldest companion, Iesif the Aerosmith, bent low over a curling scroll. A reed in the howling wind. He seemed more fit to record the clamor rather than join it. </p>
+
+
+
+<div id="buttons">
+	<figure>
+    <img onClick="backPage();" src="arrow.png" class="nav-icon" style="transform: scaleX(-1);" />
+    <figcaption>Back Page</figcaption>
+</figure>
+	
+   <figure>
+    <img onClick="window.print();" src="Print.png" height="110" />
+    <figcaption>Print Window</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="increaseContrast();" src="Contrast.png" />
+    <figcaption>Increase Contrast</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="resetContrast();" src="reset.png" style="filter: grayscale(0.75)" />
+    <figcaption>Reset Contrast</figcaption>
+    </figure>
+	
+	<figure>
+    <img onClick="nextPage();" src="arrow.png" class="nav-icon" />
+    <figcaption>Next Page</figcaption>
+</figure>
+</div>
+
+</div>
+</body>
+</html>

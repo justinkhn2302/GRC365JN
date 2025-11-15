@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novel :: Orchostraitorp3</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=New+Rocker&display=swap" rel="stylesheet">
+<style>
+    #page {
+        width: 928px;
+        height: 1224px;
+        margin: 24px auto;
+        background: gold;
+        border-radius: 24px;
+        border: 1px solid lightblue;
+        color: red;
+		position: relative;
+    } h1 {
+        font: 48pt/1.4em "New Rocker";
+        text-align: center; 
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } img {
+        width: 125px;
+    } img:hover {
+        filter: opacity(0.67);
+    } figure {
+        width: 125px;
+        margin: 0 auto;
+        cursor: pointer;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+        text-align: center;
+    }.nav-icon {
+        width: 60px; 
+	} #buttons {
+	width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px 0;
+    background: rgba(255,255,255,0.8); 
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    backdrop-filter: blur(4px); 
+    } button {
+        width: 125px;
+        height: 50px;
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 6px;
+    } @media print {
+        body {
+            width: 7in;
+            height: 9.0in;
+        } figure {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+</style>
+<script language="javascript" type="text/javascript">
+	function backPage(){
+    window.location.href = "page2(Orchostraitor).html"; 
+}
+	function increaseContrast(){
+		document.getElementById('page').style.color='black';
+		
+		document.getElementById('page').style.background='white';
+	} function resetContrast(){
+		document.getElementById('page').style.background='black';
+		
+		document.getElementById('page').style.color='red';
+		
+		document.getElementById('page').style.background='gold';
+	}function nextPage(){
+    window.location.href = "page3(Orchostraitor).html";
+}
+	
+
+</script>
+</head>
+
+<body>
+    <div id="page">
+    <h1>Orchostraitor - page 3</h1>
+    <p>As the hollow continued to fill with bickering voices, the hulking storm, Tensyll Tyrkoon lurched up from his spire, motioning indignantly to the burning landscape with his vast wing. “And what of all the peaks they’ve already stolen from us? Would we abandon those wingfolk to suffer? To be branded and used like livestock? We should set our focus on reclaiming them.” 
+The boy behemoth filled the place of his slain father, plumage still black with youth and the ash of battle. Broad shoulders quaked with unspent fury. Nowle could hear the tremor in his breath, the fire caged in his throat. He still grieves, and such grief hones an unyielding vengeance. He thought. He will be difficult to convince.</p>
+<p>Beside the brooding figure, Zaygra, the Angel of Aurucal, a lasting member of his previous council, laid a wing upon the behemoth’s back. “My son is right, enough of this talk,” She spoke low, but powerful, and the boy strengthened at her word. “The humans made their choice when they marched. We will fight now, or our people shall continue to suffer.” </p> 
+<p>Her grip was tight around Heavensong, her spear— as beautiful and dangerous as its master.  Beneath the calm marble of her face, Nowle could see the pulse at her temple. She was far from composed. She was a weapon strained to the edge of shattering— but even the most brittle steel can be tempered, with the right fire. If only Nowle could win her allegiance, then her son might follow. Perhaps then, even the entire hollow could be swayed… All save one— The stranger among them that would never bend to him, Vaator Gnott.</p> 
+<p>Vaator the Vulture reclined with ease, one talon hooked drowsily around his perch, the other raised a glass of nectar-wine. He nursed the drink as though the entire gathering were a play performed for his amusement. His beak glistened black, eyes glimmering and sharp. The exile had chosen a grim hour to return to the Highroosts— a return Nowle had long dreaded. In this time of desperation, the covenant had put aside Vaator’s great crimes, but Nowle never would. He would not forget what the vulture had done, nor what he was capable of. The two met eyes. Vaator raised his wine, he drank, and his black smile bled red. </p> 
+
+
+
+
+
+<div id="buttons">
+	<figure>
+    <img onClick="backPage();" src="arrow.png" class="nav-icon" style="transform: scaleX(-1);" />
+    <figcaption>Back Page</figcaption>
+</figure>
+	
+   <figure>
+    <img onClick="window.print();" src="Print.png" height="110" />
+    <figcaption>Print Window</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="increaseContrast();" src="Contrast.png" />
+    <figcaption>Increase Contrast</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="resetContrast();" src="reset.png" style="filter: grayscale(0.75)" />
+    <figcaption>Reset Contrast</figcaption>
+    </figure>
+	
+	<figure>
+    <img onClick="nextPage();" src="arrow.png" class="nav-icon" />
+    <figcaption>Next Page</figcaption>
+</figure>
+</div>
+
+</div>
+</body>
+</html>

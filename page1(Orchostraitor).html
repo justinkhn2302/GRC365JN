@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Novel :: Orchostraitor</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=New+Rocker&display=swap" rel="stylesheet">
+<style>
+    #page {
+        width: 928px;
+        height: 1224px;
+        margin: 24px auto;
+        background: gold;
+        border-radius: 24px;
+        border: 1px solid lightblue;
+        color: red;
+		position: relative;
+    } h1 {
+        font: 48pt/1.4em "New Rocker";
+        text-align: center; 
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } img {
+        width: 125px;
+    } img:hover {
+        filter: opacity(0.67);
+    } figure {
+        width: 125px;
+        margin: 0 auto;
+        cursor: pointer;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+        text-align: center;
+    }.nav-icon {
+        width: 60px; 
+    } #buttons {
+	width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px 0;
+    background: rgba(255,255,255,0.8); 
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    backdrop-filter: blur(4px); 
+    } button {
+        width: 125px;
+        height: 50px;
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 6px;
+    } @media print {
+        body {
+            width: 7in;
+            height: 9.0in;
+        } figure {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+</style>
+<script language="javascript" type="text/javascript">
+	function increaseContrast(){
+		document.getElementById('page').style.color='black';
+		
+		document.getElementById('page').style.background='white';
+	} function resetContrast(){
+		document.getElementById('page').style.background='black';
+		
+		document.getElementById('page').style.color='red';
+		
+		document.getElementById('page').style.background='gold';
+	}function nextPage(){
+    window.location.href = "page2(Orchostraitor).html";
+}
+	
+
+</script>
+</head>
+
+<body>
+    <div id="page">
+    <h1>Orchostraitor</h1>
+    <p>The humans will vanquish us all.
+Dread coiled in Nowle Orriven’s breast as he looked down into the vast hollow. A churning mass of war-worn wingfolk filled the grand chamber, packed shoulder to shoulder like trembling hatchlings in the shadow of a predator. They were the final remnant of their kind.
+ He released a sigh, head bowing beneath heavy sorrow. Only a sun-cycle has passed since the first human ships crossed the horizon. A single cycle, and already they have reduced our entire kingdom to ashes.</p>
+<p>Thousands of mergansil refugees huddled beneath the open canopy, their roosts burnt into blue cinders by human sorceries. Wingwardens slumped in their blackened armors, stormseers murmured desperate prayers, and ash-winged survivors clung to each other in silence. 
+The defiant, the broken, and the grieving— all had fled to Mount Valkarahm, all had fled to the last roost. </p>
+<p>Built on the edge of a pronged peninsula, the ancestral citadel of the mergansil jutted from jagged coastal cliffs like the ivory spine of a long dead giant. Whitewood towers and bone-colored spires coiled upward, piercing a pitch twilight alive with seething nightmares. These shadows slithered over the horizon, curling at the foot of the bright white gates of the citadel, awaiting the feast’s beginning.</p>
+<p>Within these stalwart walls of false salvation, the heights of rising darkness swam with circling frenzies of wingkin. Their screams cut like a blade through the hollows, a siren-song bleeding the will of all who heard. This was their answer to the heavy pulse that thundered across the land, war-drums of the human horde echoing through the sky— a ballad of death imminent. </p>
+		<p>Nowle lifted his gaze as the suns sank beneath the smothering night. A black maw gaped over the world.
+The Voidnight. He whispered, as if it might hear. Though he had long grown past his chickhood, the barren heavens never ceased to unnerve him. And as the screech of his maddened kin echoed across the thundering sky, that fear deepened. The void felt ravenous, starved for millennia. Looming over the wingfolk citadel with a hunger older than the suns themselves. And tonight, it had finally cornered its prey.  </p>
+
+
+
+
+<div id="buttons">
+    <figure>
+    <img onClick="window.print();" src="Print.png" height="110" />
+    <figcaption>Print Window</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="increaseContrast();" src="Contrast.png" />
+    <figcaption>Increase Contrast</figcaption>
+    </figure>
+    
+    <figure>
+    <img onClick="resetContrast();" src="reset.png" style="filter: grayscale(0.75)" />
+    <figcaption>Reset Contrast</figcaption>
+    </figure>
+	
+	<figure>
+    <img onClick="nextPage();" src="arrow.png" class="nav-icon"/>
+    <figcaption>Next Page</figcaption>
+</figure>
+</div>
+
+</div>
+</body>
+</html>
